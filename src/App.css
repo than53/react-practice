@@ -1,25 +1,25 @@
-body{
+body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-a{
+a {
   text-decoration: none;
   color: white;
 }
 
-a:hover{
+a:hover {
   text-decoration: underline;
 }
 
-.header{
+.header {
   background-color: #282c34;
   padding: 20px;
   color: white;
   text-align: center;
 }
 
-.header nav a{
+.header nav a {
   padding: 0 10px;
 }
 
@@ -29,34 +29,37 @@ a:hover{
   background-color: #f4f4f4;
 }
 
-.about-section h2, .contact-section h2, .projects-section h2{
+.about-section h2,
+.contact-section h2,
+.projects-section h2 {
   margin-bottom: 20px;
-} 
+}
 
-.projects-section{
+.projects-section {
   padding: 50px;
   text-align: center;
 }
 
-.projects-list, .project-item{
-margin-bottom: 30px;
-}
-
-.projects-list .project-item h3{
+.projects-list,
+.project-item {
   margin-bottom: 30px;
 }
 
-.projects-list .project-item a{
+.projects-list .project-item h3 {
+  margin-bottom: 30px;
+}
+
+.projects-list .project-item a {
   color: blue;
 }
 
-.contact-section{
+.contact-section {
   padding: 50px;
   text-align: center;
   background-color: #f4f4f4;
 }
 
-.contact-section a{
+.contact-section a {
   color: blue;
 }
 
@@ -66,3 +69,4 @@ footer {
   color: white;
   text-align: center;
 }
+

@@ -1,25 +1,27 @@
-import React from 'react'
-import {useState} from 'react'
-
+import React from "react";
+import { useState } from "react";
+import "../react-practice-hooks/Usestate.css"
 
 function UseStatePractice() {
+  const [count, setCount] = useState(0);
+  const [step, setStep] = useState(1);
 
-    const [count, setCount] = useState(0); 
-
-    const incrementCount=()=>{
-        setCount(count +1);
-    }
-     const decrementCount=()=>{
-        setCount(count -1);
-    }
+  const incrementCount = () => {
+    setCount(count + step);
+  };
+  const decrementCount = () => {
+    setCount(count - step);
+  };
 
   return (
-    <div>
-        <h1>Counter value : {count}</h1>
-        <button onClick={incrementCount}>Increment</button>
-        <button onClick={decrementCount}>Decrement</button>
+    <div className="app-container">
+      <h1>Counter value : {count}</h1>
+
+      <input type="number" value={step} onChange={(e)=>setStep(parseInt(e.target.value))}/>
+      <button onClick={incrementCount}>Increment</button>
+      <button onClick={decrementCount}>Decrement</button>
     </div>
-  )
+  );
 }
 
-export default UseStatePractice
+export default UseStatePractice;
