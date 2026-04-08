@@ -1,6 +1,8 @@
 import React from "react";
 import "./App.css";
 import ProfileCard from "./components/react-practice-props/ProfileCard";
+import UseStatePractice from "./components/react-practice-hooks/UseStatePractice";
+
 
 const App = () => {
   const handleHobbyClick = (hobby) => {
@@ -21,8 +23,9 @@ const App = () => {
         onHobbyClicked:handleHobbyClick
    }
 
+
   return (
-    <div className="App">
+    <div className="app-container">
       {/*  React Portfolio Practice Component*/}
       {/* <Header />
     <About/>
@@ -36,6 +39,7 @@ const App = () => {
       />
       <ProfileCard {...johnProfile}
       /> */}
+      <UseStatePractice></UseStatePractice>
     </div>
   );
 };
