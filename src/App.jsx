@@ -1,5 +1,6 @@
-// import "./App.css";
-import TimerReact from "./components/timer-practice-project/TimerReact";
+import "./App.css";
+
+import UseRef from "./components/react-practice-hooks/UseRef";
 
 
 const App = () => {
@@ -26,7 +27,8 @@ const App = () => {
       {/* <UseEffect></UseEffect> */}
       {/* <UseEffectMouseDetect></UseEffectMouseDetect> */}
       {/* <MouseTrackerParent/> */}
-      <TimerReact/>
+      {/* <TimerReact/> */}
+      <UseRef/>
     </>
   );
 };

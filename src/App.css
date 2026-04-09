@@ -78,3 +78,14 @@ footer {
   margin: 20px;
 } */
 
+*{
+  margin: 0px;
+}
+
+div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
