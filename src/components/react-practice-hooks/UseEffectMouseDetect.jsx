@@ -11,7 +11,12 @@ function UseEffectMouseDetect() {
             setMousePosition({x:e.clientX, y:e.clientY})
         };
         window.addEventListener('mousemove', handleMousePosition)
-    },[mousePosition])
+          console.log("mouse move listener added")
+        return ()=>{
+            window.removeEventListener('mousemove', handleMousePosition)
+           console.log("mouse move listener remove")
+        }
+    },[])
 
   return (
     <div>
