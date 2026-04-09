@@ -6,6 +6,7 @@ import UseStateArray from "./components/react-practice-hooks/UseStateArray";
 import UseStateForm from "./components/react-practice-hooks/UseStateForm";
 import ColorPicker from "./components/color-picker-practice-project/ColorPicker";
 import UseEffect from "./components/react-practice-hooks/UseEffect";
+import UseEffectMouseDetect from "./components/react-practice-hooks/UseEffectMouseDetect";
 
 
 const App = () => {
@@ -47,7 +48,8 @@ const App = () => {
       {/* <UseStateArray></UseStateArray> */}
       {/* <UseStateForm></UseStateForm> */}
       {/* <ColorPicker></ColorPicker> */}
-      <UseEffect></UseEffect>
+      {/* <UseEffect></UseEffect> */}
+      <UseEffectMouseDetect></UseEffectMouseDetect>
     </>
   );
 };
