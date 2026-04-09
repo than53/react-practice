@@ -1,34 +1,8 @@
-import React from "react";
-import "./App.css";
-import ProfileCard from "./components/react-practice-props/ProfileCard";
-import UseStatePractice from "./components/react-practice-hooks/UseStatePractice";
-import UseStateArray from "./components/react-practice-hooks/UseStateArray";
-import UseStateForm from "./components/react-practice-hooks/UseStateForm";
-import ColorPicker from "./components/color-picker-practice-project/ColorPicker";
-import UseEffect from "./components/react-practice-hooks/UseEffect";
-import UseEffectMouseDetect from "./components/react-practice-hooks/UseEffectMouseDetect";
-import MouseTrackerParent from "./components/react-practice-hooks/MouseTrackerParent";
+// import "./App.css";
+import TimerReact from "./components/timer-practice-project/TimerReact";
 
 
 const App = () => {
-  const handleHobbyClick = (hobby) => {
-    alert(`You clicked on: ${hobby}`);
-  };
-
-   const aliceProfile={   name:"Alice",
-        age:"26",
-        isMember:true,
-        hobbies:["Hiking", "Cleaning"],
-        onHobbyClicked:handleHobbyClick
-   }
-
-      const johnProfile={   name:"Jogn",
-        age:"26",
-        isMember:false,
-        hobbies:["Reading", "Coding"],
-        onHobbyClicked:handleHobbyClick
-   }
-
 
   return (
     <>
@@ -51,7 +25,8 @@ const App = () => {
       {/* <ColorPicker></ColorPicker> */}
       {/* <UseEffect></UseEffect> */}
       {/* <UseEffectMouseDetect></UseEffectMouseDetect> */}
-      <MouseTrackerParent/>
+      {/* <MouseTrackerParent/> */}
+      <TimerReact/>
     </>
   );
 };
