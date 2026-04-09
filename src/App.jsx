@@ -3,6 +3,7 @@ import "./App.css";
 import ProfileCard from "./components/react-practice-props/ProfileCard";
 import UseStatePractice from "./components/react-practice-hooks/UseStatePractice";
 import UseStateArray from "./components/react-practice-hooks/UseStateArray";
+import UseStateForm from "./components/react-practice-hooks/UseStateForm";
 
 
 const App = () => {
@@ -41,7 +42,8 @@ const App = () => {
       <ProfileCard {...johnProfile}
       /> */}
       {/* <UseStatePractice></UseStatePractice> */}
-      <UseStateArray></UseStateArray>
+      {/* <UseStateArray></UseStateArray> */}
+      <UseStateForm></UseStateForm>
     </div>
   );
 };
