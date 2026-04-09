@@ -5,6 +5,7 @@ import UseStatePractice from "./components/react-practice-hooks/UseStatePractice
 import UseStateArray from "./components/react-practice-hooks/UseStateArray";
 import UseStateForm from "./components/react-practice-hooks/UseStateForm";
 import ColorPicker from "./components/color-picker-practice-project/ColorPicker";
+import UseEffect from "./components/react-practice-hooks/UseEffect";
 
 
 const App = () => {
@@ -45,7 +46,8 @@ const App = () => {
       {/* <UseStatePractice></UseStatePractice> */}
       {/* <UseStateArray></UseStateArray> */}
       {/* <UseStateForm></UseStateForm> */}
-      <ColorPicker></ColorPicker>
+      {/* <ColorPicker></ColorPicker> */}
+      <UseEffect></UseEffect>
     </>
   );
 };
