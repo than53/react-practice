@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import "../react-practice-hooks/Usestate.css"
+import "../react-practice-hooks/Usestate.css";
 
 function UseStatePractice() {
   const [count, setCount] = useState(0);
@@ -13,13 +13,23 @@ function UseStatePractice() {
     setCount(count - step);
   };
 
+  const incrementCountTwice = () => {
+    setCount((prevCount) => prevCount + step);
+    setCount((prevCount) => prevCount + step);
+  };
+
   return (
     <div className="app-container">
       <h1>Counter value : {count}</h1>
 
-      <input type="number" value={step} onChange={(e)=>setStep(parseInt(e.target.value))}/>
+      <input
+        type="number"
+        value={step}
+        onChange={(e) => setStep(parseInt(e.target.value))}
+      />
       <button onClick={incrementCount}>Increment</button>
       <button onClick={decrementCount}>Decrement</button>
+      <button onClick={incrementCountTwice}>Increment Twice</button>
     </div>
   );
 }
