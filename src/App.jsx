@@ -4,6 +4,7 @@ import ProfileCard from "./components/react-practice-props/ProfileCard";
 import UseStatePractice from "./components/react-practice-hooks/UseStatePractice";
 import UseStateArray from "./components/react-practice-hooks/UseStateArray";
 import UseStateForm from "./components/react-practice-hooks/UseStateForm";
+import ColorPicker from "./components/color-picker-practice-project/ColorPicker";
 
 
 const App = () => {
@@ -27,7 +28,7 @@ const App = () => {
 
 
   return (
-    <div className="app-container">
+    <>
       {/*  React Portfolio Practice Component*/}
       {/* <Header />
     <About/>
@@ -43,8 +44,9 @@ const App = () => {
       /> */}
       {/* <UseStatePractice></UseStatePractice> */}
       {/* <UseStateArray></UseStateArray> */}
-      <UseStateForm></UseStateForm>
-    </div>
+      {/* <UseStateForm></UseStateForm> */}
+      <ColorPicker></ColorPicker>
+    </>
   );
 };
 

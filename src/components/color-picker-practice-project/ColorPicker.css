@@ -1,0 +1,43 @@
+
+
+.App{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 50px;
+    min-height: 100vh;
+    color: #f0f0f0;
+}
+
+h1{
+    color: #f0f0f0;
+}
+
+.color-pallete{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.color-box{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border: 2px solid #fff;
+}
+
+.custuom-color-picker{
+    margin-top: 20px;
+}
+
+.custuom-color-picker input{
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.custuom-color-picker input:hover{
+    background-color: #555;
+}
