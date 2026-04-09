@@ -1,37 +1,62 @@
-import React from "react";
+import React, { createContext, useContext, useState } from "react";
+
+const themeContext = createContext("light");
 
 function ProDrilling() {
-  const theme = "dark";
+  const [theme, setTheme] = useState("light");
+  const toggleTheme = () => {
+    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
+  };
   return (
-    <div style={{ border: "2px solid black", padding: "20px" }}>
-      <h2> App Parent</h2>
-      <ComponentA theme={theme} />
+    <div>
+      <GlobalComponenet />
+      <themeContext.Provider value={theme}>
+        <div style={{ border: "2px solid black", padding: "20px" }}>
+          <h2> App Parent</h2>
+          <button onClick={toggleTheme}>Toggle Theme: {theme}</button>
+          <ComponentA />
+        </div>
+      </themeContext.Provider>
+      <themeContext.Provider value="dark">
+        <GlobalComponenet />
+      </themeContext.Provider>
     </div>
   );
 }
 
-function ComponentA({ theme }) {
+function ComponentA() {
   return (
     <div style={{ border: "2px solid black", padding: "20px" }}>
       <h2> Component A</h2>
-      <ComponentB theme={theme} />
+      <ComponentB />
     </div>
   );
 }
 
-function ComponentB({ theme }) {
-   return (
+function ComponentB() {
+  return (
     <div style={{ border: "2px solid black", padding: "20px" }}>
       <h2> Component B</h2>
-      <ThemeComponent theme={theme} />
+      <ThemeComponent />
     </div>
   );
 }
 
-function ThemeComponent({ theme }) {
-     return (
+function ThemeComponent() {
+  const theme = useContext(themeContext);
+  return (
     <div style={{ border: "2px solid black", padding: "20px" }}>
       <h2> ThemeComponent</h2>
+      <p>The current theme is : {theme}</p>
+    </div>
+  );
+}
+
+function GlobalComponenet() {
+  const theme = useContext(themeContext);
+  return (
+    <div style={{ border: "2px solid black", padding: "20px" }}>
+      <h2> Global Component</h2>
       <p>The current theme is : {theme}</p>
     </div>
   );
