@@ -1,7 +1,5 @@
 import "./App.css";
-
-import UseRef from "./components/react-practice-hooks/UseRef";
-
+import ProDrilling from "./components/prop-drilling/ProDrilling";
 
 const App = () => {
 
@@ -28,7 +26,8 @@ const App = () => {
       {/* <UseEffectMouseDetect></UseEffectMouseDetect> */}
       {/* <MouseTrackerParent/> */}
       {/* <TimerReact/> */}
-      <UseRef/>
+      {/* <UseRef/> */}
+      <ProDrilling/>
     </>
   );
 };
