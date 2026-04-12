@@ -1,5 +1,5 @@
 import "./App.css";
-import ProDrilling from "./components/prop-drilling/ProDrilling";
+import CustomHook from "./components/custom-hook/CustomHook";
 
 const App = () => {
 
@@ -27,7 +27,8 @@ const App = () => {
       {/* <MouseTrackerParent/> */}
       {/* <TimerReact/> */}
       {/* <UseRef/> */}
-      <ProDrilling/>
+      {/* <ProDrilling/> */}
+      <CustomHook/>
     </>
   );
 };
