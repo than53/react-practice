@@ -1,0 +1,31 @@
+import React, { useEffect, useState } from "react";
+
+function ApiConsume() {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    fetch("https://jsonplaceholder.typicode.com/posts")
+      .then((response) => response.json())
+      .then((json) => setData(json));
+  }, []);
+
+  return (
+    <div>
+      <h2>Api Consume</h2>
+
+        
+          {/* <p>User ID: {data.userId}</p>
+          <p>Todo ID: {data.id}</p>
+          <p>Todo Title{data.title}</p> */}
+
+          {data.map((post)=>(
+            <ul>
+                <li>{post.id}</li>
+                <li><strong>{post.title}</strong></li>
+            </ul>
+          ))}
+    </div>
+  );
+}
+
+export default ApiConsume;

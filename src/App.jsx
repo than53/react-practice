@@ -1,5 +1,5 @@
 import "./App.css";
-import CustomHook from "./components/custom-hook/CustomHook";
+import ApiConsume from "./components/api-consume/ApiConsume";
 
 const App = () => {
 
@@ -28,7 +28,8 @@ const App = () => {
       {/* <TimerReact/> */}
       {/* <UseRef/> */}
       {/* <ProDrilling/> */}
-      <CustomHook/>
+      {/* <CustomHook/> */}
+      <ApiConsume/>
     </>
   );
 };
