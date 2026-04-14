@@ -10,7 +10,7 @@ function ApiConsume() {
     fetch("https://jsonplaceholder.typicode.com/posts")
       .then((response) => response.json())
       .then((json) => setData(json), setLoading(false))
-      .catch(error => console.log(`Error: ${error}`), setError(error));
+      .catch(error => console.log(`Error: ${error}`), setError(error), setLoading(false));
   }, []);
 
   if (loading) {
