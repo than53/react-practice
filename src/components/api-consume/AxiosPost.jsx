@@ -1,6 +1,18 @@
 import axios from "axios";
 import React, { useState } from "react";
 
+
+
+axios.interceptors.request.use(request =>{
+    console.log('Starting Request')
+    return request
+})
+
+axios.interceptors.response.use(response =>{
+    console.log('Response ', response)
+    return response
+})
+
 function AxiosPost() {
 
     const [data, setData] = useState()
