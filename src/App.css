@@ -77,15 +77,3 @@ footer {
   background-color: #f8f9fa;
   margin: 20px;
 } */
-
-*{
-  margin: 0px;
-}
-
-div{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-

@@ -1,5 +1,5 @@
-import "./App.css";
-import AxiosPost from "./components/api-consume/AxiosPost";
+import ReactBasicForms from "./components/react-forms/ReactBasicForms";
+
 
 const App = () => {
 
@@ -31,7 +31,8 @@ const App = () => {
       {/* <CustomHook/> */}
       {/* <ApiConsume/> */}
       {/* <AxiosApi/> */}
-      <AxiosPost/>
+      {/* <AxiosPost/> */}
+      <ReactBasicForms/>
     </>
   );
 };
