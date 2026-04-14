@@ -1,5 +1,5 @@
 import "./App.css";
-import AxiosApi from "./components/api-consume/AxiosApi";
+import AxiosPost from "./components/api-consume/AxiosPost";
 
 const App = () => {
 
@@ -30,7 +30,8 @@ const App = () => {
       {/* <ProDrilling/> */}
       {/* <CustomHook/> */}
       {/* <ApiConsume/> */}
-      <AxiosApi/>
+      {/* <AxiosApi/> */}
+      <AxiosPost/>
     </>
   );
 };
