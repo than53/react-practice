@@ -1,4 +1,4 @@
-import ReactBasicForms from "./components/react-forms/ReactBasicForms";
+import ReactHookForms from "./components/react-forms/ReactHookForms";
 
 
 const App = () => {
@@ -32,7 +32,8 @@ const App = () => {
       {/* <ApiConsume/> */}
       {/* <AxiosApi/> */}
       {/* <AxiosPost/> */}
-      <ReactBasicForms/>
+      {/* <ReactBasicForms/> */}
+      <ReactHookForms/>
     </>
   );
 };
